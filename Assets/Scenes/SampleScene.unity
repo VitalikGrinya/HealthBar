@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 788085014}
         m_TargetAssemblyTypeName: HealthValueChanger, Assembly-CSharp
-        m_MethodName: ClickDamageButton
+        m_MethodName: TakeDamage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1021,6 +1021,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: {fileID: 788085015}
+  _damage: 10
+  _heal: 10
 --- !u!114 &788085015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,7 +1172,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 788085014}
         m_TargetAssemblyTypeName: HealthValueChanger, Assembly-CSharp
-        m_MethodName: ClickHealButton
+        m_MethodName: TakeHeal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1812,8 +1814,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: {fileID: 788085015}
   _healthChanger: {fileID: 788085014}
-  _value: 0.1
-  _interpolationValue: 5
+  _value: 0.05
+  _interpolationValue: 1
 --- !u!1 &1975570857
 GameObject:
   m_ObjectHideFlags: 0
